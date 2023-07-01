@@ -1,0 +1,17 @@
+{
+    //% Restore Terminals
+    "restoreTerminals.runOnStartup": true,
+    "restoreTerminals.terminals": [
+          {
+              "splitTerminals": [
+                  {
+                      "shouldRunCommands": false,
+                      "name": "SASS Terminal",
+                      "commands": [
+                          "npx sass sass/style.scss css/style.css",
+                      ]
+                  }
+              ]
+          }
+      ]
+  }

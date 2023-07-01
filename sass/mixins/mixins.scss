@@ -1,0 +1,74 @@
+//% Mixins
+@mixin warning {
+  background-color: #ffa600;
+  color: #000;
+  text-transform: uppercase;
+  border: 2px grey solid;
+  border-radius: 15px;
+}
+
+//$ Estendere mixins
+@mixin my-text {
+  font: {
+    size: 1.3rem;
+    weight: semi-bold;
+  }
+}
+
+@mixin font-color {
+  @include my-text;
+  color: brown;
+}
+
+//% Mixins con argomenti
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+#btn {
+  @include border-radius(10px);
+  background-color: blueviolet;
+  color: white;
+  padding: 0.2rem 0.3rem;
+}
+
+//$ Più argomenti
+/* @mixin border-radius($radius, $border) {
+    border-radius: $radius;
+    border: $border;
+}
+
+#btn {
+    //@include border-radius(10px, 2px solid red);
+    @include border-radius($radius: 10px, $border: 2px solid red);
+    background-color: blueviolet;
+    color: white;
+    padding: .2rem .3rem;
+} */
+
+//$ Argomenti con valori di default
+/* @mixin border-radius($radius: 10px, $border) {
+    border-radius: $radius;
+    border: $border;
+}
+
+#btn {
+    @include border-radius($border: 2px solid red);
+    background-color: blueviolet;
+    color: white;
+    padding: .2rem .3rem;
+}
+ */
+
+//$ Mixin con vararg
+/*
+@mixin box-shadow($shadows...) {
+    -webkit-box-shadow: $shadows;
+    -moz-box-shadow: $shadows;
+    box-shadow: $shadows;
+}
+
+#btn {
+    @include box-shadow(0 1px 2px #ffa600, 0 2px 4px #0013);
+}
+ */

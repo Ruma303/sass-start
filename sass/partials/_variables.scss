@@ -1,0 +1,27 @@
+//% Colori
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$warning-color: #e67e22;
+$error-color: #e74c3c;
+$success-color: #27ae60;
+
+//% Dimensioni
+$base-font-size: 16px;
+$base-line-height: 1.5;
+
+//% Tipografia
+$font-Helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-Times: "Georgia", "Times New Roman", Times, serif;
+
+//% Variabili map
+$button: (
+   text-color: #fff,
+   'background-color': #007bff,
+   "border": solid 3px #ff01c8ee
+);
+
+/*
+$titles: (
+   font-size: 3rem,
+   color: gold,
+); */

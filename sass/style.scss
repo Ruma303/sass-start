@@ -1,0 +1,48 @@
+@import 'partials/reset';
+@import 'partials/variables';
+@import 'mixins/mixins.scss';
+
+
+
+body {
+   //$ Commenti
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   div {
+      h1 {
+         //color: $primary-color;
+         font-style: $font-Times;
+      }
+
+      p {
+         color: $error-color;
+         font-style: $font-Helvetica;
+         font-size: $base-font-size;
+         line-height: $base-line-height;
+      }
+
+      button {
+         color: map-get($map: $button, $key: text-color);
+         background-color: map-get($button, $key: background-color);
+         border: map-get($map: $button, $key: border);
+      }
+   }
+}
+
+.warning {
+   @include warning;
+   padding: .2rem;
+   margin: 2rem;
+}
+
+.paragraph {
+   @include font-color;
+}
+
+/* h1 {
+   font-size: map-get($map: $titles, $key: font-size);
+   color: map-get($titles, $key: color);
+} */

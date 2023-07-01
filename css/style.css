@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+* ul {
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+}
+
+/*
+$titles: (
+   font-size: 3rem,
+   color: gold,
+); */
+#btn {
+  border-radius: 10px;
+  background-color: blueviolet;
+  color: white;
+  padding: 0.2rem 0.3rem;
+}
+
+/* @mixin border-radius($radius, $border) {
+    border-radius: $radius;
+    border: $border;
+}
+
+#btn {
+    //@include border-radius(10px, 2px solid red);
+    @include border-radius($radius: 10px, $border: 2px solid red);
+    background-color: blueviolet;
+    color: white;
+    padding: .2rem .3rem;
+} */
+/* @mixin border-radius($radius: 10px, $border) {
+    border-radius: $radius;
+    border: $border;
+}
+
+#btn {
+    @include border-radius($border: 2px solid red);
+    background-color: blueviolet;
+    color: white;
+    padding: .2rem .3rem;
+}
+ */
+/*
+@mixin box-shadow($shadows...) {
+    -webkit-box-shadow: $shadows;
+    -moz-box-shadow: $shadows;
+    box-shadow: $shadows;
+}
+
+#btn {
+    @include box-shadow(0 1px 2px #ffa600, 0 2px 4px #0013);
+}
+ */
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body div h1 {
+  font-style: "Georgia", "Times New Roman", Times, serif;
+}
+body div p {
+  color: #e74c3c;
+  font-style: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+body div button {
+  color: #fff;
+  background-color: #007bff;
+  border: solid 3px rgba(255, 1, 200, 0.9333333333);
+}
+
+.warning {
+  background-color: #ffa600;
+  color: #000;
+  text-transform: uppercase;
+  border: 2px grey solid;
+  border-radius: 15px;
+  padding: 0.2rem;
+  margin: 2rem;
+}
+
+.paragraph {
+  font-size: 1.3rem;
+  font-weight: semi-bold;
+  color: brown;
+}
+
+/* h1 {
+   font-size: map-get($map: $titles, $key: font-size);
+   color: map-get($titles, $key: color);
+} */
+
+/*# sourceMappingURL=style.css.map */
